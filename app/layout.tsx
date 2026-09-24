@@ -23,7 +23,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Kurs Czasów Przeszłych | Lista Oczekujących - Agata Piątek",
-  description: "Zapisy na kurs czasów przeszłych są aktualnie zamknięte. Dołącz do listy oczekujących i odbierz zniżkę na kolejną edycję!",
+  description: "Zapisy na kurs czasów przeszłych są aktualnie zamknięte. Zapisz się na listę oczekujących, aby otrzymać gwarancję najniższej ceny i powiadomienie przed innymi.",
+  icons: {
+    icon: "/brand-logo.jpg",
+    apple: "/brand-logo.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -32,9 +36,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
+    <html lang="pl" className="scroll-smooth">
       <body 
-        className={`${merriweather.variable} ${openSans.variable} font-sans bg-[var(--color-background)] text-slate-800 overflow-x-hidden min-h-screen flex flex-col`}
+        className={`${merriweather.variable} ${openSans.variable} font-sans bg-[#F8F4ED] text-slate-800 overflow-x-hidden min-h-screen flex flex-col`}
       >
         {/* MailerLite Universal Script */}
         <Script id="mailerlite-universal" strategy="afterInteractive">
@@ -46,6 +50,10 @@ export default function RootLayout({
             ml('account', '973308');
           `}
         </Script>
+        <Script 
+          src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" 
+          strategy="afterInteractive" 
+        />
         {children}
       </body>
     </html>
