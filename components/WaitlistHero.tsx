@@ -30,7 +30,7 @@ export default function WaitlistHero() {
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#113629] leading-tight md:leading-[1.15]">
-              Hiszpańskie czasy przeszłe <span className="text-[#EE7B30] underline decoration-[#EE7B30]/30 decoration-wavy">bez wiecznego chaosu</span> i blokady w głowie
+              Hiszpańskie czasy przeszłe – <span className="text-[#EE7B30] underline decoration-[#EE7B30]/30 decoration-wavy">logicznie</span>, bez strzelania „bo tak mi się wydaje...”
             </h1>
 
             <p className="font-sans text-base md:text-lg text-slate-700 leading-relaxed max-w-xl">
